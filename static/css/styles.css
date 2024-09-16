@@ -10865,3 +10865,25 @@ header.masthead .post-heading .meta a {
   text-align: center;
 }
 
+@media (max-width: 991px) {
+    #mainNav .navbar-nav > li.nav-item > a.nav-link {
+        color: #000; /* Cambia a un color que contraste con el fondo */
+    }
+    #mainNav .navbar-brand {
+        color: #000; /* Asegúrate de que el logo o texto también sea visible */
+    }
+}
+
+@media (max-width: 991px) {
+    #mainNav {
+        background-color: #fff; /* O cualquier color de fondo deseado */
+    }
+}
+
+@media (max-width: 991px) {
+    #mainNav .navbar-toggler {
+        color: #000; /* Cambia el color del icono */
+        border-color: #000; /* Color del borde del toggler */
+    }
+}
+
