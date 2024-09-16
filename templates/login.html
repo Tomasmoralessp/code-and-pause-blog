@@ -20,7 +20,7 @@
 <main class="mb-4">
   <div class="container">
     <div class="row">
-      <!-- TODO: add a flash message here for users registering twice -->
+      <!-- DONE: add a flash message here for users registering twice -->
       {% with messages = get_flashed_messages() %}
       {%if messages%}
       {%for message in messages%}
@@ -29,7 +29,7 @@
       {%endif%}
       {%endwith%}
       <div class="col-lg-8 col-md-10 mx-auto">
-        <!--TODO: render login form here-->
+        <!--DONE: render login form here-->
         {% from 'bootstrap5/form.html' import render_form %}
         {{render_form(login_form, button_map={"submit": "dark"})}}
 
