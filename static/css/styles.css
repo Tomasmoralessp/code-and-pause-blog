@@ -6052,6 +6052,21 @@ textarea.form-control-lg {
     background-color: transparent !important;
   }
 }
+/* Estilos para navbar en dispositivos móviles */
+@media (max-width: 991.98px) {
+  #mainNav {
+    background-color: #000 !important; /* Color de fondo oscuro */
+  }
+  #mainNav .navbar-nav .nav-link {
+    color: #fff !important; /* Texto blanco */
+  }
+  .navbar-toggler-icon {
+    filter: invert(100%); /* Cambiar el color del icono del botón de menú */
+  }
+}
+
+
+
 
 @media (max-width: 1199.98px) {
   .offcanvas-xl {
