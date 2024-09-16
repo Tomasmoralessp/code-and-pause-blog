@@ -13,13 +13,10 @@ from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 from typing import List
 import datetime
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 ckeditor = CKEditor(app)
 Bootstrap5(app)
 gravatar = Gravatar(app,
@@ -53,7 +50,7 @@ def admin_only(f):
 # CREATE DATABASE
 class Base(DeclarativeBase):
     pass
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
